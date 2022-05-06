@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-v0r!wzpthxo6@56=-$hto7a#a^(=woysny2t1sjc4ddur%kbpk
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['staging.kittcc.net'
-
+CSRF_TRUSTED_ORIGINS = ['staging.kittcc.net']
 
 # Application definition
 
