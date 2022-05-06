@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v0r!wzpthxo6@56=-$hto7a#a^(=woysny2t1sjc4ddur%kbpk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://staging.kittcc.net']
 
 # Application definition
