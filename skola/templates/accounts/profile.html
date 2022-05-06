@@ -3,6 +3,7 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+{% csrf_token %}
 <h2>{{user.username}}'s profile</h2>
 
 {% endblock %}
