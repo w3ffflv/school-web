@@ -32,7 +32,7 @@ else:
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 CSRF_TRUSTED_ORIGINS = ['https://staging.kittcc.net', 'https://kittcc.net']
 
 # Application definition
