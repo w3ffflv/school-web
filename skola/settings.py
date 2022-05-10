@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/w3fff/sites/staging.kittcc.net/static/' 
-#STATICFILES_DIRS = [BASE_DIR / "static",   'static/']
+STATICFILES_DIRS = "/home/w3fff/sites/staging.kittcc.net/static/"
 
 
 # Default primary key field type
