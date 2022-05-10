@@ -1,8 +1,8 @@
 body
 {
-    background-color: rgba(141, 105, 5, 0.938);
+    background-color: #673AB7;
 } 
 
-h1,h2{
-    color:white;
+h1,h2,span,a,p{
+    color:#ffffff;
 }
