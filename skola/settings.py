@@ -33,7 +33,7 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-CSRF_TRUSTED_ORIGINS = ['https://staging.kittcc.net', 'https://kittcc.net']
+CSRF_TRUSTED_ORIGINS = ['https://staging.kittcc.net']
 
 # Application definition
 
