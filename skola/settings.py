@@ -11,16 +11,26 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import os 
+import os
+from tkinter import ALL 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = os.path.join(BASE_DIR, "skola")
+
+
+if 'IS_DJANGO_DEBUG_FALSE' in os.environ:
+    DEBUG = False
+    SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+    ALLOWED_HOSTS = [os.environ['SITENAME']]
+else:
+    SECRET_KEY = 'django-insecure-v0r!wzpthxo6@56=-$hto7a#a^(=woysny2t1sjc4ddur%kbpk'
+    DEBUG = True
+    ALLOWED_HOSTS = ['*']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-v0r!wzpthxo6@56=-$hto7a#a^(=woysny2t1sjc4ddur%kbpk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
