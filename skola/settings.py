@@ -33,8 +33,6 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://staging.kittcc.net', 'https://kittcc.net']
 
 # Application definition
