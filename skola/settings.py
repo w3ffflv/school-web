@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import MySQLdb
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = os.path.join(BASE_DIR, "skola")
@@ -20,7 +21,7 @@ PROJECT_DIR = os.path.join(BASE_DIR, "skola")
 if 'IS_DJANGO_DEBUG_FALSE' in os.environ:
     DEBUG = False
     SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
-    ALLOWED_HOSTS = [os.environ['SITENAME']]
+    ALLOWED_HOSTS = ['staging.kittcc.net'] # ['os.environ['SITENAME']'] - old
 else:
     SECRET_KEY = 'django-insecure-v0r!wzpthxo6@56=-$hto7a#a^(=woysny2t1sjc4ddur%kbpk'
     DEBUG = True
@@ -87,6 +88,7 @@ DATABASES = {
         'USER': 'othbpjti_skola2022',
         'PASS' : 's[Qe6mG]v6TR',
         'HOST' : '192.236.178.44',
+        'PORT' : '3306',
     }
 }
 
