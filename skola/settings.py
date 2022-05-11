@@ -82,8 +82,11 @@ WSGI_APPLICATION = 'skola.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'othbpjti_skola',
+        'USER': 'othbpjti_skola2022',
+        'PASS' : 's[Qe6mG]v6TR',
+        'HOST' : '192.236.178.44',
     }
 }
 
