@@ -1,12 +1,35 @@
-{% extends 'base.html' %}
+<!--{% extends 'base.html' %}
 
 {% block title %} SKOLA 2022 {% endblock %}
 
-{% block content %}
+{% block content %}-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link href="/static/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login</h1>
+			<form method="post">
+                {% csrf_token %}
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+	</body>
+</html>
 
-<h1>
-Home2222
-</h1>
 
 
-{% endblock %}
+<!--{% endblock %}-->
