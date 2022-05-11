@@ -85,13 +85,14 @@ WSGI_APPLICATION = 'skola.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        #'NAME': 'othbpjti_skola',
-        #'USER': 'othbpjti_skola2022',
-        #'PASS' : 's[Qe6mG]v6TR',
-        #'HOST' : '192.236.178.44',
-        #'PORT' : '3306',
+        # 'ENGINE': 'django.db.backends.sqlite3', # sqlite3
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # sqlite3
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'othbpjti_skola',
+        'USER': 'othbpjti_skola2022',
+        'PASS' : 's[Qe6mG]v6TR',
+        'HOST' : '192.236.178.44',
+        'PORT' : '3306',
     }
 }
 
